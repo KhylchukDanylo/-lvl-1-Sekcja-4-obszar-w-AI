@@ -1,0 +1,201 @@
+@import "base/mixins.scss";
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 64px;
+  @include tablet {
+    margin-bottom: 247px;
+    margin-top: 247px;
+  }
+  @include desktop {
+    margin-top: 159px;
+    margin-bottom: 140px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+.hero {
+  width: 343px;
+  margin-bottom: 24px;
+  @include tablet {
+    width: 490px;
+  }
+  @include desktop {
+    width: 467px;
+    margin-bottom: 0;
+    margin-right: 109px;
+  }
+  &__title,
+  &__text {
+    font-family: "DM Sans";
+    font-style: normal;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+
+    letter-spacing: -0.002em;
+
+    color: #ffffff;
+
+    @include tablet {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 1.17;
+    }
+    @include desktop {
+      margin-bottom: 24px;
+    }
+  }
+  &__text {
+    margin-top: 0;
+
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #ffffff;
+    @include tablet {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+
+  @include tablet {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    width: 496px;
+  }
+  @include desktop {
+    gap: 24px;
+  }
+  &__item {
+    border-radius: 20px;
+    background-color: #272d42;
+    width: 343px;
+    height: 196px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 16px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    @include tablet {
+      margin: 0;
+      width: 240px;
+      height: 218px;
+      flex-basis: calc((100% - 16px) / 2);
+    }
+    @include desktop {
+      width: 268px;
+      height: 240px;
+      &:nth-child(-n + 2) {
+        margin-bottom: 7px;
+      }
+      flex-basis: calc((100% - 100px) / 2);
+    }
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 16px;
+    @include desktop {
+      margin-top: 24px;
+    }
+  }
+  &__icon {
+    margin-bottom: 16px;
+    border-radius: 14px;
+    padding: 14px;
+    @include desktop {
+      padding: 16px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+  }
+  &__text {
+    width: 303px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    opacity: 0.5;
+    @include tablet {
+      width: 209px;
+    }
+    @include desktop {
+      width: 236px;
+      margin-bottom: 24px;
+    }
+  }
+}
+.icon-d-sphere1-1 {
+  background-color: #373155;
+}
+.icon-vr-user-glasses-1 {
+  background-color: #2c3455;
+}
+.icon-technology-circle-objects-1 {
+  background-color: #274255;
+}
+.icon-ai-artificial-intelligence-chip-1 {
+  background-color: #3d413f;
+}
