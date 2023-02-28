@@ -164,7 +164,7 @@
     color: #ffffff;
   }
   &__text {
-    width: 303px;
+    width: 340px;
     margin-top: 0;
     margin-bottom: 20px;
     font-family: "DM Sans";
@@ -179,7 +179,8 @@
 
     opacity: 0.5;
     @include tablet {
-      width: 209px;
+      height: 66px;
+      width: 226px;
     }
     @include desktop {
       width: 236px;
